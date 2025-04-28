@@ -46,7 +46,6 @@ graph TD
     ServerLogic -->|Authentication| Clerk[Clerk Auth]
     ServerLogic -->|Payment Processing| Stripe[Stripe API]
     ServerLogic -->|File Storage| UploadThing[UploadThing]
-    ServerLogic -->|Error Tracking| Sentry[Sentry]
     
     subgraph "Frontend Layer"
         ReactUI
@@ -68,7 +67,6 @@ graph TD
         Clerk
         Stripe
         UploadThing
-        Sentry
     end
 ```
 

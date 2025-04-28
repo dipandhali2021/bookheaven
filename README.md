@@ -420,7 +420,6 @@ sequenceDiagram
   - Clerk (authentication)
   - Stripe (payments)
   - UploadThing (file storage)
-  - Sentry (optional, for error tracking)
 
 ### Environment Setup
 
@@ -476,9 +475,6 @@ STRIPE_WEBHOOK_SECRET=your_stripe_webhook_secret
 UPLOADTHING_SECRET=your_uploadthing_secret
 UPLOADTHING_APP_ID=your_uploadthing_app_id
 
-# Monitoring
-NEXT_PUBLIC_SENTRY_DSN=your_sentry_dsn
-SENTRY_AUTH_TOKEN=your_sentry_auth_token
 ```
 
 5. **Start the development server:**

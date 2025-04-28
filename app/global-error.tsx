@@ -7,7 +7,6 @@ export default function GlobalError({
 }: {
   error: Error & { digest?: string }
 }) {
-  // Removed Sentry error tracking
 
   return (
     <html>

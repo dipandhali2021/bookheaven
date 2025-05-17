@@ -523,6 +523,9 @@ BookHeaven can be deployed to various platforms:
    - Build the application: `pnpm build`
    - Start the server: `pnpm start`
 
+4. **Azure Account**
+   - app service of web app deployment
+
 ## Contributing
 
 We welcome contributions to BookHeaven! Please follow these steps:

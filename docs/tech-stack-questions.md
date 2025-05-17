@@ -763,32 +763,118 @@
        - Error logging
        - Usage metrics
 
-38. **Q: How is CI/CD implemented?**
-    - A: CI/CD pipeline is implemented comprehensively:
-     - Pipeline stages:
-       - Code validation
-       - Test execution
-       - Build process
-       - Deployment steps
-     - Automation features:
-       - GitHub Actions
-       - Automated testing
-       - Code quality checks
-       - Security scanning
-     - Environment management:
-       - Staging deployment
-       - Production release
-       - Rollback procedures
-       - Branch protection
-     - Monitoring:
-       - Pipeline metrics
-       - Build success rates
-       - Deployment tracking
-       - Performance impact
+38. **Q: Explain the Azure App Service web app deployment process.**
+    - A: Azure App Service with web app deployment is implemented with comprehensive features:
+     - Deployment method:
+       - Code import directly from github repository
+     - Environment configuration:
+       - App service plan selection
+       - Runtime stack configuration
+       - Environment variables management
+       - Application settings
+     - Monitoring and validation:
+       - Post-deployment health checks
+       - Performance verification
+       - Logging integration
+       - Notification systems
+
+## Azure Cloud Services
+
+41. **Q: Explain the Azure Cosmos DB implementation for real-time features.**
+    - A: Azure Cosmos DB is utilized with extensive capabilities:
+     - Database design:
+       - Multi-region distribution for low latency
+       - Partition key strategy for performance
+       - Consistency level configuration
+       - Resource unit allocation
+     - Data modeling:
+       - Denormalized document structure
+       - Embedded documents for related data
+       - Reference data patterns
+       - Time-to-live configurations
+     - Real-time features:
+       - Change feed processing for notifications
+       - WebSocket integration
+       - Server-sent events support
+       - Real-time analytics
+     - Operational aspects:
+       - Automatic indexing policies
+       - Backup and disaster recovery
+       - Monitoring and alerting
+       - Cost optimization strategies
+
+42. **Q: Detail the Azure Application Insights integration.**
+    - A: Application Insights monitoring is implemented extensively:
+     - Instrumentation setup:
+       - Server-side SDK integration
+       - Client-side JavaScript telemetry
+       - Custom event tracking
+       - User flow analysis
+     - Performance monitoring:
+       - Page load time tracking
+       - API response time metrics
+       - Dependency monitoring
+       - Database query performance
+     - Error tracking:
+       - Exception capturing and analysis
+       - Failure rate monitoring
+       - Error grouping and prioritization
+       - Correlation with deployments
+     - Business analytics:
+       - User behavior tracking
+       - Conversion funnel analysis
+       - Feature usage metrics
+       - Custom KPI dashboards
+
+43. **Q: How is Azure Key Vault integrated for secrets management?**
+    - A: Azure Key Vault integration follows comprehensive security practices:
+     - Secrets management:
+       - API keys and connection strings storage
+       - Automated secret rotation
+       - Version history tracking
+       - Environment-specific configurations
+     - Access control:
+       - Managed identities implementation
+       - Role-based access control
+       - Access policies definition
+       - Audit logging and monitoring
+     - Integration points:
+       - Application startup configuration
+       - CI/CD pipeline integration
+       - Runtime secret retrieval
+       - Development environment setup
+     - Security features:
+       - Hardware Security Module backed keys
+       - Soft-delete and purge protection
+       - Private endpoint access
+       - Network security controls
+
+44. **Q: Explain the Azure CDN implementation for content delivery.**
+    - A: Azure CDN is implemented with robust delivery optimization:
+     - CDN configuration:
+       - Origin groups for redundancy
+       - Cache rule optimization
+       - Custom domain and HTTPS setup
+       - Geographic routing profiles
+     - Content optimization:
+       - Dynamic compression
+       - Minification of static assets
+       - Image optimization rules
+       - Large file delivery optimization
+     - Performance features:
+       - Point of presence selection
+       - Protocol optimization (HTTP/2, HTTP/3)
+       - Preloading of critical assets
+       - Smart routing algorithms
+     - Operational aspects:
+       - Cache purge automation
+       - Real-time analytics
+       - Bandwidth monitoring
+       - Cost optimization strategies
 
 ## Mobile Optimization
 
-39. **Q: Detail the responsive design implementation.**
+45. **Q: Detail the responsive design implementation.**
     - A: Responsive design follows a comprehensive approach:
      - Mobile-first strategy:
        - Breakpoint system
@@ -811,7 +897,7 @@
        - Performance monitoring
        - Accessibility checks
 
-40. **Q: How is touch interaction handled?**
+46. **Q: How is touch interaction handled?**
     - A: Touch interactions are implemented comprehensively:
      - Event handling:
        - Touch events
@@ -836,7 +922,7 @@
 
 ## Code Organization
 
-41. **Q: Explain the feature-based structure.**
+47. **Q: Explain the feature-based structure.**
     - A: Feature organization follows a modular approach:
      - Directory structure:
        - Feature isolation
@@ -859,7 +945,7 @@
        - Code splitting
        - Performance monitoring
 
-42. **Q: How are shared utilities organized?**
+48. **Q: How are shared utilities organized?**
     - A: Shared utilities follow a structured organization:
      - Directory structure:
        - Functional categories
@@ -884,7 +970,7 @@
 
 ## Book Management
 
-43. **Q: Detail the book data structure.**
+49. **Q: Detail the book data structure.**
     - A: Book data is structured with comprehensive relationships:
      - Database schema:
        - Book details storage
@@ -907,7 +993,7 @@
        - Update cascades
        - Deletion policies
 
-44. **Q: How is book search implemented?**
+50. **Q: How is book search implemented?**
     - A: Book search utilizes multiple optimization strategies:
      - Search implementation:
        - Full-text search
@@ -932,7 +1018,7 @@
 
 ## Testing Strategy
 
-45. **Q: Explain the testing pyramid implementation.**
+51. **Q: Explain the testing pyramid implementation.**
     - A: Testing follows a comprehensive pyramid approach:
      - Unit testing:
        - Individual components
@@ -955,7 +1041,7 @@
        - Playwright
        - Coverage reporting
 
-46. **Q: How are test fixtures managed?**
+52. **Q: How are test fixtures managed?**
     - A: Test fixtures are managed systematically:
      - Data generation:
        - Factory functions
@@ -980,7 +1066,7 @@
 
 ## Data Fetching
 
-47. **Q: Detail the server action implementation.**
+53. **Q: Detail the server action implementation.**
     - A: Server actions are implemented with robust features:
      - Implementation details:
        - Type-safe actions
@@ -1003,7 +1089,7 @@
        - Error logging
        - Usage analytics
 
-48. **Q: How is data revalidation handled?**
+54. **Q: How is data revalidation handled?**
     - A: Data revalidation implements multiple strategies:
      - Revalidation types:
        - On-demand updates
@@ -1028,7 +1114,7 @@
 
 ## Accessibility
 
-49. **Q: Explain the accessibility implementation.**
+55. **Q: Explain the accessibility implementation.**
     - A: Accessibility is implemented comprehensively:
      - Core features:
        - ARIA attributes
@@ -1050,28 +1136,3 @@
        - User testing
        - Tool validation
        - Regular reviews
-
-## Performance Monitoring
-
-50. **Q: Detail the monitoring setup.**
-    - A: Monitoring is implemented with comprehensive coverage:
-     - Analytics integration:
-       - Vercel Analytics
-       - Custom metrics
-       - User behavior
-       - Error tracking
-     - Performance monitoring:
-       - Core Web Vitals
-       - Page load metrics
-       - API performance
-       - Resource usage
-     - Error tracking:
-       - Error reporting
-       - Issue categorization
-       - Impact analysis
-       - Resolution tracking
-     - User monitoring:
-       - Session tracking
-       - Feature usage
-       - Performance impact
-       - User satisfaction

@@ -144,7 +144,7 @@
 ## Deployment & CI/CD
 
 24. **Q: How is the application deployed?**
-    - A: Deployed on Vercel with automatic deployments from the main branch.
+    - A: Deployed on Azure with automatic deployments from the main branch.
 
 ## Security
 
@@ -232,15 +232,6 @@
 42. **Q: How is SEO handled?**
     - A: Using Next.js metadata API, proper semantic HTML, and sitemap generation.
 
-## Internationalization
-
-43. **Q: How is multi-language support handled?**
-    - A: Using Next.js built-in i18n features for content localization.
-
-## Performance Monitoring
-
-44. **Q: How is application performance monitored?**
-    - A: Using Vercel Analytics and proper error logging.
 
 ## Database Operations
 
@@ -271,3 +262,115 @@
 
 50. **Q: How is the project code organized?**
     - A: Feature-based organization with shared components, hooks, and utilities in separate directories.
+
+
+
+
+## Azure Cloud Services
+
+51. **Q: Explain the Azure App Service web app deployment process.**
+    - A: Azure App Service with web app deployment is implemented with comprehensive features:
+     - Deployment method:
+       - Code import directly from github repository
+     - Environment configuration:
+       - App service plan selection
+       - Runtime stack configuration
+       - Environment variables management
+       - Application settings
+     - Monitoring and validation:
+       - Post-deployment health checks
+       - Performance verification
+       - Logging integration
+       - Notification systems
+
+52. **Q: Explain the Azure Cosmos DB implementation for real-time features.**
+    - A: Azure Cosmos DB is utilized with extensive capabilities:
+     - Database design:
+       - Multi-region distribution for low latency
+       - Partition key strategy for performance
+       - Consistency level configuration
+       - Resource unit allocation
+     - Data modeling:
+       - Denormalized document structure
+       - Embedded documents for related data
+       - Reference data patterns
+       - Time-to-live configurations
+     - Real-time features:
+       - Change feed processing for notifications
+       - WebSocket integration
+       - Server-sent events support
+       - Real-time analytics
+     - Operational aspects:
+       - Automatic indexing policies
+       - Backup and disaster recovery
+       - Monitoring and alerting
+       - Cost optimization strategies
+
+53. **Q: Detail the Azure Application Insights integration.**
+    - A: Application Insights monitoring is implemented extensively:
+     - Instrumentation setup:
+       - Server-side SDK integration
+       - Client-side JavaScript telemetry
+       - Custom event tracking
+       - User flow analysis
+     - Performance monitoring:
+       - Page load time tracking
+       - API response time metrics
+       - Dependency monitoring
+       - Database query performance
+     - Error tracking:
+       - Exception capturing and analysis
+       - Failure rate monitoring
+       - Error grouping and prioritization
+       - Correlation with deployments
+     - Business analytics:
+       - User behavior tracking
+       - Conversion funnel analysis
+       - Feature usage metrics
+       - Custom KPI dashboards
+
+54. **Q: How is Azure Key Vault integrated for secrets management?**
+    - A: Azure Key Vault integration follows comprehensive security practices:
+     - Secrets management:
+       - API keys and connection strings storage
+       - Automated secret rotation
+       - Version history tracking
+       - Environment-specific configurations
+     - Access control:
+       - Managed identities implementation
+       - Role-based access control
+       - Access policies definition
+       - Audit logging and monitoring
+     - Integration points:
+       - Application startup configuration
+       - CI/CD pipeline integration
+       - Runtime secret retrieval
+       - Development environment setup
+     - Security features:
+       - Hardware Security Module backed keys
+       - Soft-delete and purge protection
+       - Private endpoint access
+       - Network security controls
+
+55. **Q: Explain the Azure CDN implementation for content delivery.**
+    - A: Azure CDN is implemented with robust delivery optimization:
+     - CDN configuration:
+       - Origin groups for redundancy
+       - Cache rule optimization
+       - Custom domain and HTTPS setup
+       - Geographic routing profiles
+     - Content optimization:
+       - Dynamic compression
+       - Minification of static assets
+       - Image optimization rules
+       - Large file delivery optimization
+     - Performance features:
+       - Point of presence selection
+       - Protocol optimization (HTTP/2, HTTP/3)
+       - Preloading of critical assets
+       - Smart routing algorithms
+     - Operational aspects:
+       - Cache purge automation
+       - Real-time analytics
+       - Bandwidth monitoring
+       - Cost optimization strategies
